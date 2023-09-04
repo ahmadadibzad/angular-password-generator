@@ -1,21 +1,21 @@
 <h1>Password Generator</h1>
 
 <label for="">Enter Length</label>
-<input type="text">
+<input (input)="onChangeLength($event)">
 
 <div>
   <label>User Letters</label>
-  <input type="checkbox">
+  <input type="checkbox" (change)="onChangeUseLetters()">
 </div>
 
 <div>
   <label>User Numbers</label>
-  <input type="checkbox">
+  <input type="checkbox" (change)="onChangeUseNumbers()">
 </div>
 
 <div>
   <label>User Symbols</label>
-  <input type="checkbox">
+  <input type="checkbox" (change)="onChangeUseSymbols()">
 </div>
 
 <div>
