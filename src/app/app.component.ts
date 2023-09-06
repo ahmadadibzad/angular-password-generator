@@ -52,7 +52,7 @@ onChangeLength(event: any){
 
     for (let i = 0; i < this.length; i++) {
       const index = Math.floor(Math.random() * validChars.length);
-      generatedPassword = validChars[index];
+      generatedPassword += validChars[index];
     }
 
     this.password = generatedPassword;
