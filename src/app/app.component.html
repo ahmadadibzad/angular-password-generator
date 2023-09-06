@@ -19,7 +19,9 @@
 </div>
 
 <div>
-  <button (click)="onButtonClick()">Generate!</button>
+  <button [disabled]="!(length > 0 && (includeLetters || includeNumbers || includeSymbols))"
+    (click)="onButtonClick()">Generate!
+  </button>
 </div>
 
 <div>
